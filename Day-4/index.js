@@ -91,7 +91,7 @@
 
 
 // var score=prompt("enter score")
-// console.log(score+10);
+// console.log(score+10);\\
 
 
 
