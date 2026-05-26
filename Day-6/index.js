@@ -72,11 +72,11 @@
 
 // 
 
-let obj={
-    insta: "instagram",
-    fb: "facebook"
-}
-for(let i in obj){
-    console.log(i ,obj[i]);
+// let obj={
+//     insta: "instagram",
+//     fb: "facebook"
+// }
+// for(let i in obj){
+//     console.log(i ,obj[i]);
     
-}
+// }

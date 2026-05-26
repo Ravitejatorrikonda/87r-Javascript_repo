@@ -99,17 +99,20 @@
 //     })
 
 
-fetch("https://dummyjson.com/quotes")
-.then(res=>
-    {
-        if(!res.ok){
-            console.log("something went wrong")
-        }else{
-            return res.json();
-        }
-    })
-.then(data=>{
-    for(i=0;i<data.quotes.length;i++){
-        console.log(data.quotes[i].quote)
-    }
-})
+// fetch("https://dummyjson.com/quotes")
+// .then(res=>
+//     {
+//         if(!res.ok){
+//             console.log("something went wrong")
+//         }else{
+//             return res.json();
+//         }
+//     })
+// .then(data=>{
+//     for(i=0;i<data.quotes.length;i++){
+//         console.log(data.quotes[i].quote)
+//     }
+// })
+
+
+

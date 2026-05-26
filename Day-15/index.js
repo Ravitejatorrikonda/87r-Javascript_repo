@@ -116,9 +116,15 @@ let promise3 = new Promise((resolve, reject) => {
 
 
 
-function sum(val){
-    return new Promise(resolve=>{
-        resolve(val+10)
-    })
-}
-sum(10).then(res=>console.log(res))
+// function sum(val){
+//     return new Promise(resolve=>{
+//         resolve(val+10)
+//     })
+// }
+// sum(10).then(res=>console.log(res))
+Promise.resolve(1)
+  .then(val => {
+    console.log(val);
+    return val + 1;
+  })
+  .then(val => console.log(val));
