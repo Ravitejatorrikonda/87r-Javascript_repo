@@ -1,7 +1,7 @@
 
 
 async function displayData() {
-    let res=await fetch("http://localhost:3000/student")
+    let res=await fetch("https://crudappp87r.onrender.com/student")
     try {
         if(!res.ok){
             throw new Error("Data Not Getting");

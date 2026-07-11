@@ -1,6 +1,6 @@
 
 async function fetchData() {
-    let res = await fetch("http://localhost:3000/student");
+    let res = await fetch("https://crudappp87r.onrender.com/student");
     try   {
         if (!res.ok) {
             throw new Error("Data not fetching");
@@ -43,7 +43,7 @@ data.forEach(student => {
 }
 //Deleting the Data
 async function deleteData(id) {
-    let res=await fetch(`http://localhost:3000/student/${id}`,{"method":"DELETE"})
+    let res=await fetch(`https://crudappp87r.onrender.com/student/${id}`,{"method":"DELETE"})
     try {
         if(!res.ok){
             throw new Error("Data Not Deleted");
@@ -61,7 +61,7 @@ async function editData(id) {
     let studentId=document.getElementById("id");
     let stName=document.getElementById("name");
     let image=document.getElementById("image")
-    let res=await fetch(`http://localhost:3000/student/${id}`)
+    let res=await fetch(`https://crudappp87r.onrender.com/student/${id}`)
     try {
         if(!res.ok){
             throw new Error("Data not getting in inputfields");
@@ -93,7 +93,7 @@ async function savedata(){
    }
 
    let StudentMethod=studentId?"PUT":"POST";
-   const URL=studentId?`http://localhost:3000/student/${studentId}`:"http://localhost:3000/student"
+   const URL=studentId?`https://crudappp87r.onrender.com/student/${studentId}`:"https://crudappp87r.onrender.com/student"
 
    let res=await fetch(URL,{
     "method":StudentMethod,
