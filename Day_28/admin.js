@@ -1,7 +1,7 @@
 
 async function fetchData() {
     let res = await fetch("http://localhost:3000/student");
-    try {
+    try   {
         if (!res.ok) {
             throw new Error("Data not fetching");
 
